@@ -1,0 +1,15 @@
+[Unit]
+Description=FlaskMongo Service
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/projects/flask_mongo
+ExecStart=sh startserver.sh
+ExecStop=sh stopserver.sh
+Type=forking
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

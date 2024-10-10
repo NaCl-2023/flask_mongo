@@ -1,11 +1,10 @@
 import gevent.monkey
 
 gevent.monkey.patch_all()
+import multiprocessing
 
 from config.config import BaseConfig
-
 from config import Config
-import multiprocessing
 
 # debug = True
 bind = f'{Config.common.host}:{Config.common.port}'

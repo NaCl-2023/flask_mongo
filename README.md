@@ -1,4 +1,4 @@
-## 基础flask +　mongo的脚手架
+## 基础flask + mongo的脚手架
 更方便的进行常规的flask项目初始化，脱胎于Flask-Application。
 
 ### 虚拟环境
@@ -10,16 +10,17 @@
 
 ### 启动
 - 启动配置在 conf/config.ini
-- 默认为8081端口
-- host为127.0.0.1
+  - 默认host为127.0.0.1
+  - 默认端口为8081
 - 非生产环境：python manage.py
 - 生生产环境：sh startserver.sh
 
 ### 附带部分框架配置
-- nginx配置
+- nginx配置(可自行link到对应地方)
   - conf/flask_mongo.conf
+  - 默认为8080转发8081
 - gunicorn配置
-  - conf/gconfig.py
+  - config/gconfig.py
 - systemctl配置
   - conf/flask_mongo.service
   - 启动和停止sh startserver.sh/stopserver.sh

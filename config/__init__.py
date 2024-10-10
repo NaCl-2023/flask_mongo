@@ -8,6 +8,7 @@ from dataclasses import dataclass
 
 from utils.file_utils import read_ini
 
+
 @dataclass
 class Common:
     debug: bool

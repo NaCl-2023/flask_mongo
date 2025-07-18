@@ -6,6 +6,9 @@ class BaseConfig:
 
     LOG_DIR = './logs/'
 
+    GET_TYPE = 'GET'  # 默认请求方式
+    POST_TYPE = 'POST'  # 默认请求方式
+
 
 class DBCollection:
     # collection

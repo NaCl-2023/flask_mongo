@@ -1,7 +1,7 @@
-from .api import api
-from .index import index
+from .api import API
+from .index import INDEX
 
-bps = [index, api]
+bps = [INDEX, API]
 
 
 def init_blue_print(app):

@@ -38,3 +38,16 @@ def save_file(url, value):
     except:
         return False
     return True
+
+
+class Tools:
+    @property
+    def fun_stack(self):
+        """
+        获取调用栈的函数名
+        @return:
+        """
+        frame   = inspect.currentframe().f_back          # 调用者帧
+        func    = frame.f_code.co_name.replace('_', '.')
+        return func
+
